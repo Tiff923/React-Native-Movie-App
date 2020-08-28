@@ -4,10 +4,6 @@ import {FETCHED_MOVIE, SEARCHED_MOVIE} from './action'
 
 const defaultReducer = (state=[], action) => {
     switch(action.type){
-        // case DELETE_MOVIE:
-        //     return state.filter(
-        //         (obj)=> {return obj.Title != action.payload.Title}
-        //     )
         case FETCHED_MOVIE:
             return action.payload 
         default: 
